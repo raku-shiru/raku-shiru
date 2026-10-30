@@ -5,5 +5,5 @@ export default defineConfig({
   site: process.env.SITE_URL || 'https://rakushiru.pages.dev',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [sitemap({ filter: (page) => !/\/(operator|contact)\/$/.test(page) })],
+  integrations: [sitemap({ filter: (page) => !/\/(operator)\/$/.test(page) })],
 });
