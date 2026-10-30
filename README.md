@@ -85,3 +85,11 @@ Do **not** create a Direct Upload project if automatic GitHub deploys are requir
 Cloudflare Pages Git integration: https://developers.cloudflare.com/pages/configuration/git-integration/
 Astro Content Collections: https://docs.astro.build/en/guides/content-collections/
 Google SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+## Google Search Console
+
+See [docs/google-search-console.md](docs/google-search-console.md) for URL-prefix verification using the `PUBLIC_GOOGLE_SITE_VERIFICATION` Cloudflare Pages build variable and sitemap submission. No verification token is included in the public source.
+
+## Contact form
+
+The public `/contact/` page uses [FormSubmit](https://formsubmit.co/) to forward messages to `raku-shiru@protonmail.com`. **One-time activation is necessary:** submit a test message from the live form and open the confirmation email in the Proton inbox. Until activation, successful forwarding has not been verified. CAPTCHA/honeypot protection is enabled by the provider. The form service handles contact data; see `src/pages/privacy.astro`. If changing recipient address, update the form action and privacy disclosure, then re-activate.
