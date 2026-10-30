@@ -11,20 +11,10 @@ const rest = posts.filter(p=>p.id !== featured?.id);
   <section class="hero"><div class="shell hero-layout">
     <div><div class="hero-tag">RAKUSHIRU • 暮らしのヒント</div><h1>毎日の暮らしを、<br /><em>もっとラクに。</em></h1><p class="hero-copy">家事も、ごはんも、いつものことも。<br />ちょっとした工夫や便利なサービスを知るだけで、毎日が少し軽くなるかもしれません。</p><a href="/articles/" class="button button--primary">記事を読んでみる<span aria-hidden="true">↗</span></a></div>
     <div class="hero-art" aria-hidden="true">
-      <div class="hero-ring">
-        <svg class="hero-ring__svg" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <path id="rakushiru-hero-top-arc" d="M 64 125 A 169 169 0 0 1 356 125" />
-            <path id="rakushiru-hero-bottom-arc" d="M 64 295 A 169 169 0 0 0 356 295" />
-          </defs>
-          <circle class="hero-ring__circle" cx="210" cy="210" r="151" />
-          <text class="hero-ring__text">
-            <textPath href="#rakushiru-hero-top-arc" startOffset="50%" text-anchor="middle">なるほど、が見つかる</textPath>
-          </text>
-          <text class="hero-ring__text hero-ring__text--bottom">
-            <textPath href="#rakushiru-hero-bottom-arc" startOffset="50%" text-anchor="middle">ゆとりのある毎日へ</textPath>
-          </text>
-        </svg>
+      <div class="hero-orbit-ring"></div>
+      <div class="hero-orbit-track">
+        <span class="hero-orbit-pill hero-orbit-pill--top">なるほど、が見つかる</span>
+        <span class="hero-orbit-pill hero-orbit-pill--bottom">ゆとりのある毎日へ</span>
       </div>
       <div class="hero-emblem"><img src="/favicon.svg" width="230" height="230" alt="" /></div>
     </div>
