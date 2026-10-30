@@ -1,0 +1,5 @@
+---
+interface Props { size?: number; }
+const {size=42}=Astro.props;
+---
+<img src="/favicon.svg" width={size} height={size} alt="" aria-hidden="true" decoding="async" />

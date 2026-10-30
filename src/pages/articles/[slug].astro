@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import {getCollection,render} from 'astro:content';
+import {categories,categoryUrl,articleUrl,formatDate} from '../../lib/site';
+import type { CollectionEntry } from 'astro:content';
+export async function getStaticPaths(){const posts=await getCollection('blog');return posts.map(post=>({params:{slug:post.id},props:{post}}));}
+const {post} = Astro.props as {post:CollectionEntry<'blog'>};
+const {Content,headings} = await render(post);
+const posts = await getCollection('blog');
+const related=posts.filter(x=>x.id!==post.id).slice(0,3);
+const canonical=new URL(Astro.url.pathname,Astro.site ?? 'https://rakushiru.pages.dev').toString();
+const schema={ '@context':'https://schema.org', '@type':'BlogPosting', headline:post.data.title, description:post.data.description, inLanguage:'ja-JP', datePublished:post.data.publishedAt.toISOString(), ...(post.data.updatedAt?{dateModified:post.data.updatedAt.toISOString()}:{}), author:{'@type':'Organization',name:'ラクしる編集部'}, publisher:{'@type':'Organization',name:'ラクしる',url:(Astro.site ?? new URL('https://rakushiru.pages.dev')).toString()}, mainEntityOfPage:canonical };
+const crumbs={ '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{ '@type':'ListItem',position:1,name:'ホーム',item:new URL('/',Astro.site ?? 'https://rakushiru.pages.dev').toString()},{'@type':'ListItem',position:2,name:'記事一覧',item:new URL('/articles/',Astro.site ?? 'https://rakushiru.pages.dev').toString()},{'@type':'ListItem',position:3,name:post.data.title,item:canonical}]};
+---
+<BaseLayout title={post.data.title} description={post.data.description} type="article" jsonLd={[schema,crumbs]}>
+  <div class="shell"><Breadcrumb items={[{label:'記事一覧',href:'/articles/'},{label:post.data.title}]}/></div>
+  <header class="article-heading"><div class="shell"><a href={categoryUrl(post.data.category)} class="category-label" style="text-decoration:none">{categories[post.data.category].title}</a><h1>{post.data.title}</h1><p class="article-summary">{post.data.description}</p><div class="article-meta"><span>ラクしる編集部</span><time datetime={post.data.publishedAt.toISOString().slice(0,10)}>公開：{formatDate(post.data.publishedAt)}</time>{post.data.updatedAt && <time datetime={post.data.updatedAt.toISOString().slice(0,10)}>更新：{formatDate(post.data.updatedAt)}</time>}<span>読む時間の目安：約{post.data.readingMinutes}分</span></div></div></header>
+  <div class="shell article-layout"><article class="article-body">
+    {post.data.sponsored && <AffiliateDisclosure/>}
+    <Content/>
+    {post.data.sources.length>0 && <div class="references"><strong>参考・確認先</strong><ul>{post.data.sources.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a></li>)}</ul><p style="font-size:12px;margin:0">掲載内容は一般的な情報です。料金・サービス範囲などの最新条件は各事業者の公式情報をご確認ください。</p></div>}
+    <section class="article-related"><h2>あわせて読みたい</h2><ul>{related.map(p=><li><a href={articleUrl(p.id)}>{p.data.title} <span aria-hidden="true">↗</span></a></li>)}</ul></section>
+  </article><aside class="article-aside"><strong>この記事について</strong><p>選ぶ前に知っておきたいポイントを、わかりやすく整理しました。</p><p><a href="/editorial-policy/">編集方針を見る ↗</a></p>{headings.filter(x=>x.depth===2).length>0&&<><strong style="margin-top:24px">目次</strong><nav aria-label="この記事の目次">{headings.filter(x=>x.depth===2).map(h=><p><a href={`#${h.slug}`}>{h.text}</a></p>)}</nav></>}</aside></div>
+</BaseLayout>

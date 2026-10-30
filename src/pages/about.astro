@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<BaseLayout title="ラクしるについて" description="ラクしるは、暮らしの便利なサービスの選び方を紹介する日本語の情報メディアです。編集の考え方と大切にしていることをご案内します。">
+ <div class="shell"><Breadcrumb items={[{label:'ラクしるについて'}]}/></div>
+ <header class="page-head"><div class="shell"><div class="eyebrow">About us</div><h1>毎日を、ちょっと軽く。</h1><p>ラクしるは、便利なサービスと暮らしのヒントを届ける情報メディアです。</p></div></header>
+ <section class="page-content"><div class="shell policy"><h2>ラクしるが大切にしていること</h2><p>「全部自分でやらなきゃ」と思う日はありませんか。家事や食事の準備、暮らしのこまごましたことを少し整理するだけで、気持ちに余裕が生まれることもあります。</p><p>ラクしるでは、便利なサービスの特徴、利用前に確認したいこと、合う人・合わない人の違いを、できるだけ具体的にまとめます。</p><h2>おすすめを押しつけない</h2><p>サービスには、よい点も気になる点もあります。広告の有無だけで評価を決めず、読者が自分の状況に照らして判断できる情報を目指します。</p><p>記事は公開情報をもとに編集しています。実際の利用経験がないサービスについて、使用したかのような表現はしません。</p><p><a href="/editorial-policy/">編集方針を見る ↗</a></p></div></section>
+</BaseLayout>

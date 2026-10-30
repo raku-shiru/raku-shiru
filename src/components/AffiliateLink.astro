@@ -1,0 +1,7 @@
+---
+import { affiliateCampaigns } from '../lib/affiliate';
+interface Props { campaignId:string; text?:string; }
+const {campaignId,text='公式サイトを見る'}=Astro.props;
+const campaign=affiliateCampaigns[campaignId];
+---
+{campaign ? <a class="button button--primary" href={campaign.url} target="_blank" rel="sponsored noopener noreferrer">{text}<span aria-hidden="true">↗</span></a> : null}

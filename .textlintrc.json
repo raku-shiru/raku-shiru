@@ -1,0 +1,10 @@
+{
+  "plugins": [],
+  "rules": {
+    "preset-japanese": {
+      "sentence-length": { "max": 130 },
+      "no-doubled-joshi": true,
+      "no-double-negative-ja": true
+    }
+  }
+}
