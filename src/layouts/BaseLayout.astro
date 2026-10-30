@@ -29,8 +29,7 @@ const safeJson=JSON.stringify(jsonNodes).replace(/</g,'\\u003c');
   <meta name="robots" content={noindex?'noindex,follow':'index,follow,max-image-preview:large'} />
   <link rel="canonical" href={canonical} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content={SITE_NAME} />
@@ -38,7 +37,7 @@ const safeJson=JSON.stringify(jsonNodes).replace(/</g,'\\u003c');
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta property="og:image" content={new URL('/og-default.png',Astro.site ?? 'https://rakushiru.pages.dev').toString()} />
+  <meta property="og:image" content={new URL('/og-default.svg',Astro.site ?? 'https://rakushiru.pages.dev').toString()} />
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json" set:html={safeJson} />
 </head>
