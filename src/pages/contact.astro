@@ -2,6 +2,23 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 ---
-<BaseLayout title="お問い合わせ" description="ラクしるへのお問い合わせについてのご案内です。" noindex={true}>
- <div class="shell"><Breadcrumb items={[{label:'お問い合わせ'}]}/></div><header class="page-head"><div class="shell"><h1>お問い合わせ</h1><p>正式なお問い合わせ窓口は、現在準備中です。</p></div></header><section class="page-content"><div class="shell policy"><p>メールアドレスやフォームを確認できる状態になり次第、こちらでご案内します。まだ受付を開始していないため、このページからお問い合わせを送ることはできません。</p></div></section>
+<BaseLayout title="お問い合わせ" description="ラクしるへのご質問やご連絡はこちら。お問い合わせフォームからラクしる編集部にメッセージを送れます。">
+  <div class="shell"><Breadcrumb items={[{label:'お問い合わせ'}]} /></div>
+  <header class="page-head"><div class="shell"><div class="eyebrow">Contact</div><h1>お問い合わせ</h1><p>記事についてのご質問やご意見、お仕事のご相談など、お気軽にお知らせください。</p></div></header>
+  <section class="page-content"><div class="shell policy">
+    <p>以下のフォームからメッセージを送信できます。お送りいただいた内容は、外部フォームサービスの FormSubmit を通じて、ラクしるの連絡先メールアドレスへ転送されます。</p>
+    <form class="contact-form" action="https://formsubmit.co/raku-shiru@protonmail.com" method="POST">
+      <input type="hidden" name="_subject" value="【ラクしる】お問い合わせ" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_url" value="https://rakushiru.pages.dev/contact/" />
+      <div class="contact-form__honeypot" aria-hidden="true"><label for="contact-website">ウェブサイト</label><input id="contact-website" type="text" name="_honey" tabindex="-1" autocomplete="off" /></div>
+      <div class="contact-form__field"><label for="contact-name">お名前 <span class="contact-form__required">必須</span></label><input id="contact-name" name="name" type="text" maxlength="100" autocomplete="name" required placeholder="お名前" /></div>
+      <div class="contact-form__field"><label for="contact-email">メールアドレス <span class="contact-form__required">必須</span></label><input id="contact-email" name="email" type="email" maxlength="254" autocomplete="email" required placeholder="example@example.com" /></div>
+      <div class="contact-form__field"><label for="contact-topic">お問い合わせ内容の種類</label><select id="contact-topic" name="topic"><option value="記事について">記事について</option><option value="ご意見・ご要望">ご意見・ご要望</option><option value="お仕事・広告について">お仕事・広告について</option><option value="その他">その他</option></select></div>
+      <div class="contact-form__field"><label for="contact-message">メッセージ <span class="contact-form__required">必須</span></label><textarea id="contact-message" name="message" rows="8" maxlength="5000" minlength="10" required placeholder="お問い合わせ内容を具体的にご記入ください。"></textarea></div>
+      <label class="contact-form__consent"><input type="checkbox" name="privacy_ack" value="同意済み" required /><span><a href="/privacy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>を確認し、入力情報が FormSubmit を通じて送信されることに同意します。</span></label>
+      <button class="button button--primary contact-form__submit" type="submit">内容を送信する <span aria-hidden="true">↗</span></button>
+      <p class="contact-form__note">送信後、確認画面やスパム対策の認証が表示されることがあります。フォームが使えない場合は、<a href="mailto:raku-shiru@protonmail.com">メールで直接お問い合わせ</a>ください。</p>
+    </form>
+  </div></section>
 </BaseLayout>
