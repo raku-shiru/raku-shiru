@@ -2,6 +2,21 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 ---
-<BaseLayout title="プライバシーポリシー" description="ラクしるのプライバシーポリシー。アクセス情報、外部リンク、今後導入する可能性のあるサービスについて説明します。">
- <div class="shell"><Breadcrumb items={[{label:'プライバシーポリシー'}]}/></div><header class="page-head"><div class="shell"><h1>プライバシーポリシー</h1><p>個人情報とサイト利用に関するご案内</p></div></header><section class="page-content"><div class="shell policy"><h2>サイトの利用に伴う情報</h2><p>ラクしるはCloudflare Pagesでの公開を予定しています。Webサイトへのアクセス時には、配信事業者がセキュリティや配信のためのアクセス情報を取り扱う場合があります。</p><h2>アクセス解析・広告</h2><p>初期版には、独自のアクセス解析タグや広告トラッキングコードを組み込んでいません。将来これらを導入する場合は、実際の使用状況と必要な情報に合わせて本ポリシーを更新します。</p><h2>外部サイト</h2><p>記事内には外部サイトへのリンクがあります。リンク先での情報の取扱いは、それぞれのサービスのプライバシーポリシーをご確認ください。</p><h2>お問い合わせ</h2><p>現在、公開できるお問い合わせ窓口を準備中です。正式な窓口の設定後にご案内を更新します。</p><p>最終確認日：2026年10月30日</p></div></section>
+<BaseLayout title="プライバシーポリシー" description="ラクしるのプライバシーポリシー。お問い合わせフォームやアクセス情報の取扱いについてご案内します。">
+  <div class="shell"><Breadcrumb items={[{label:'プライバシーポリシー'}]} /></div>
+  <header class="page-head"><div class="shell"><h1>プライバシーポリシー</h1><p>個人情報とサイトの利用に関するご案内</p></div></header>
+  <section class="page-content"><div class="shell policy">
+    <h2>ウェブサイトの利用に伴う情報</h2>
+    <p>ラクしるは Cloudflare Pages を利用してウェブサイトを公開しています。アクセス時には Cloudflare がサイトの配信やセキュリティのために、IP アドレスなどの通信情報を取り扱う場合があります。</p>
+    <h2>お問い合わせフォーム</h2>
+    <p><a href="/contact/">お問い合わせフォーム</a>では、お名前、メールアドレス、お問い合わせ内容などをご入力いただきます。これらの情報はお問い合わせへの対応や必要な連絡のために利用します。</p>
+    <p>フォームの送信には第三者サービス「FormSubmit（formsubmit.co）」を使用しています。入力内容は FormSubmit に送信され、サイト運営者の連絡先メールアドレス（raku-shiru@protonmail.com）へ転送されます。FormSubmit の案内によると、送信内容は一定期間保管される場合があります。送信前に個人情報や機密情報を必要以上に記載しないようお願いします。</p>
+    <h2>アクセス解析・広告</h2>
+    <p>現在、独自のアクセス解析タグや広告トラッキングコードは設置していません。今後導入する場合は実際の利用状況に合わせてこのページを更新します。記事にアフィリエイト広告を掲載する場合は、該当ページで広告であることを明示します。</p>
+    <h2>外部リンク</h2>
+    <p>記事やフォームから外部サービスに移動する場合があります。移動先での情報の取扱いについては、各サービスが定めるプライバシーポリシーをご確認ください。</p>
+    <h2>お問い合わせ先</h2>
+    <p>このポリシーに関するご連絡は、<a href="/contact/">お問い合わせフォーム</a>または <a href="mailto:raku-shiru@protonmail.com">raku-shiru@protonmail.com</a> までお願いします。</p>
+    <p>最終更新日：2026年10月30日</p>
+  </div></section>
 </BaseLayout>
