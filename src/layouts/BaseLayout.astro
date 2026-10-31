@@ -7,9 +7,10 @@ interface Props {
   description?: string;
   type?: 'website'|'article';
   noindex?: boolean;
+  ogImage?: string;
   jsonLd?: Record<string,unknown>|Record<string,unknown>[];
 }
-const {title=SITE_NAME,description=SITE_DESCRIPTION,type='website',noindex=false,jsonLd}=Astro.props;
+const {title=SITE_NAME,description=SITE_DESCRIPTION,type='website',noindex=false,jsonLd,ogImage}=Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://rakushiru.pages.dev').toString();
 const fullTitle=title===SITE_NAME?`${SITE_NAME}｜${SITE_TAGLINE}`:`${title}｜${SITE_NAME}`;
 const siteUrl=(Astro.site ?? new URL('https://rakushiru.pages.dev')).toString();
@@ -39,7 +40,8 @@ const safeJson=JSON.stringify(jsonNodes).replace(/</g,'\\u003c');
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta property="og:image" content={new URL('/og-default.svg',Astro.site ?? 'https://rakushiru.pages.dev').toString()} />
+  <meta property="og:image" content={new URL(ogImage ?? '/og-default.svg',Astro.site ?? 'https://rakushiru.pages.dev').toString()} />
+  {ogImage && <meta name="twitter:image" content={new URL(ogImage,Astro.site ?? 'https://rakushiru.pages.dev').toString()} />}
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json" set:html={safeJson} />
 </head>
