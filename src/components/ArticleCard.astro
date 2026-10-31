@@ -4,8 +4,9 @@ import { articleUrl, categories, formatDate } from '../lib/site';
 interface Props { post: CollectionEntry<'blog'>; index?: number; featured?: boolean }
 const { post, index, featured=false } = Astro.props;
 ---
-<a class:list={["article-card", featured && "article-card--featured"]} href={articleUrl(post.id)}>
+<a class:list={["article-card", featured && "article-card--featured", post.data.cover && "article-card--illustrated"]} href={articleUrl(post.id)}>
   <div class="article-card__top"><span class="category-label">{categories[post.data.category].title}</span><span class="article-card__symbol" aria-hidden="true">{String(index ?? 1).padStart(2,'0')}</span></div>
+  {post.data.cover && <img class="article-card__cover" src={post.data.cover} alt="" loading="lazy" decoding="async" width="600" height="338" />}
   <h3>{post.data.title}</h3>
   <p>{post.data.description}</p>
   <div class="article-card__bottom"><time datetime={post.data.publishedAt.toISOString().slice(0,10)}>{formatDate(post.data.publishedAt)}</time><span class="card-arrow" aria-hidden="true">↗</span></div>
