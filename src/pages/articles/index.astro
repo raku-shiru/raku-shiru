@@ -5,7 +5,7 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import {getCollection} from 'astro:content';
 const posts=(await getCollection('blog')).sort((a,b)=>b.data.publishedAt.getTime()-a.data.publishedAt.getTime());
 ---
-<BaseLayout title="記事一覧" description="ラクしるの記事一覧。宅配食、家事代行、ハウスクリーニング、暮らしのサブスクについて、暮らしをラクにする選び方を紹介します。">
+<BaseLayout title="記事一覧" description="ラクしるの記事一覧。食事、家事、掃除、サブスク、身だしなみまで、毎日の暮らしをラクにする選び方をご紹介します。">
   <div class="shell"><Breadcrumb items={[{label:'記事一覧'}]}/></div>
   <header class="page-head"><div class="shell"><div class="eyebrow">Journal</div><h1>記事をさがす。</h1><p>忙しい毎日のヒントを、ひとつずつ。気になるテーマの記事から読んでみてください。</p></div></header>
   <section class="page-content"><div class="shell article-grid">{posts.map((post,i)=><ArticleCard post={post} index={i+1}/>)}</div></section>
