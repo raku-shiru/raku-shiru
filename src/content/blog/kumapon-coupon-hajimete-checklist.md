@@ -75,20 +75,20 @@ sources:
 
 > **ラクしるのポイント：** 購入前に「いつ・どこで・誰が・何を・いくらで利用するか」を一文で説明できるようになっていれば、条件を見落としにくくなります。
 
-## くまポンの使い方｜Web版で購入して利用するまで
+## くまポンの使い方｜購入して利用するまで
 
 公式の利用ガイドをもとに、初めて利用するときの大まかな流れを4つにまとめました。
 
 <div class="kp-steps" role="group" aria-label="くまポンの購入から利用までの4ステップ">
-  <div class="kp-step"><span class="kp-step__num">STEP 01</span><span class="kp-step__icon" aria-hidden="true">⌕</span><strong>Web版で探す</strong><p>エリアやジャンルから探し、詳細条件を確認。</p></div>
+  <div class="kp-step"><span class="kp-step__num">STEP 01</span><span class="kp-step__icon" aria-hidden="true">⌕</span><strong>クーポンを探す</strong><p>エリアやジャンルから探し、詳細条件を確認。</p></div>
   <div class="kp-step"><span class="kp-step__num">STEP 02</span><span class="kp-step__icon" aria-hidden="true">☑</span><strong>条件・金額を確認</strong><p>期限、予約、対象者、支払総額をチェック。</p></div>
-  <div class="kp-step"><span class="kp-step__num">STEP 03</span><span class="kp-step__icon" aria-hidden="true">▣</span><strong>Web版で購入</strong><p>必要事項と支払い方法を入力して決済。</p></div>
+  <div class="kp-step"><span class="kp-step__num">STEP 03</span><span class="kp-step__icon" aria-hidden="true">▣</span><strong>クーポンを購入</strong><p>必要事項と支払い方法を入力して決済。</p></div>
   <div class="kp-step"><span class="kp-step__num">STEP 04</span><span class="kp-step__icon" aria-hidden="true">♧</span><strong>予約・当日利用</strong><p>予約が必要なら手配し、指示された方法で提示。</p></div>
 </div>
 
 ### ① クーポンを探す
 
-スマートフォンやパソコンの**Webブラウザ**でくまポンを開き、地域・カテゴリーなどから探します。会員登録とログインが必要な案内もあるため、画面の指示に従ってください。
+スマートフォンやパソコンでくまポンの公式サイトを開き、地域・カテゴリーなどから探します。会員登録とログインが必要な案内もあるため、画面の指示に従ってください。
 
 購入したいものが決まったら、商品ページで利用条件と料金を確かめます。予約が必要なクーポンは、案内されている予約方法も確認しましょう。
 
@@ -116,14 +116,9 @@ sources:
 
 なお、サービスの種類によって利用手続きは異なります。店舗で使うものと、配送やオンラインで利用するものを同じ流れと考えないようにしましょう。
 
-<div class="kp-notice" role="note">
-  <strong>! この広告経由で購入する場合はWeb版を利用してください</strong>
-  <p>今回のA8.netプログラムでは、<strong>アプリ経由の購入が成果対象外</strong>とされています。本記事から公式サイトに進む場合は、購入完了までWebブラウザ版を利用してください。クーポンの利用・提示方法は購入した商品の公式案内に従いましょう。</p>
-</div>
-
 <div class="r-ad" aria-label="くまポンbyGMOのアフィリエイト広告">
   <span class="r-ad__label">PR｜くまポンbyGMOの広告</span>
-  <p>使える日時・利用条件・キャンセルの扱いを確認し、希望に合うクーポンがあるかWeb版で探してみてください。</p>
+  <p>使える日時・利用条件・キャンセルの扱いを確認し、希望に合うクーポンがあるか公式サイトで探してみてください。</p>
   <div class="r-ad__creative">
 <a href="https://px.a8.net/svt/ejp?a8mat=4BGAUV+4QA3NE+2BUW+BY641" rel="nofollow">
 <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=261101047286&wid=006&eno=01&mid=s00000010868002007000&mc=1"></a>
@@ -171,10 +166,6 @@ sources:
 
 いいえ。利用できる曜日や時間帯、予約方法、予約変更期限はクーポンごとに異なります。希望日に利用できるか不明な場合は、購入前に確認するのが安心です。
 
-### アプリとWeb版は同じですか？
-
-サービスを利用するための導線はありますが、**今回のアフィリエイト広告経由の購入はWeb版を前提**としています。アプリ経由の申し込みは、このA8.netプログラムの成果対象外です。
-
 ### コンビニ決済に手数料はかかりますか？
 
 公式ヘルプでは220円の手数料が案内されています。期限内に支払いが完了しないと、クーポンを利用できません。実際の支払い金額と期限は購入画面で確認してください。
@@ -187,11 +178,11 @@ sources:
 
 くまポンbyGMOは、日常のサービスやおでかけのクーポンを探せる選択肢のひとつです。
 
-初めて使うなら、**有効期限、店舗、予約、料金、対象者、サービス範囲、キャンセル条件**の7つを確認してから判断しましょう。気になるクーポンを見つけたら、Web版の公式ページで詳細を見比べてみてください。
+初めて使うなら、**有効期限、店舗、予約、料金、対象者、サービス範囲、キャンセル条件**の7つを確認してから判断しましょう。気になるクーポンを見つけたら、公式サイトで詳細を見比べてみてください。
 
 <div class="r-ad r-ad--compact" aria-label="くまポンbyGMOのアフィリエイト広告">
   <span class="r-ad__label">PR｜くまポンbyGMOの広告</span>
-  <p>自分の予定に合うクーポンか、公式の詳細ページで確認しましょう。購入時はWebブラウザ版をご利用ください。</p>
+  <p>自分の予定に合うクーポンか、公式の詳細ページで確認しましょう。</p>
   <div class="r-ad__creative">
 <a href="https://px.a8.net/svt/ejp?a8mat=4BGAUV+4QA3NE+2BUW+C0B9T" rel="nofollow">
 <img border="0" width="120" height="60" alt="" src="https://www29.a8.net/svt/bgt?aid=261101047286&wid=006&eno=01&mid=s00000010868002017000&mc=1"></a>
