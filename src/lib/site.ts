@@ -1,7 +1,7 @@
 export const SITE_NAME = 'ラクしる';
 export const SITE_TAGLINE = '毎日の暮らしを、もっとラクに。';
-export const SITE_DESCRIPTION = '食事、家事、掃除、サブスク、身だしなみ、お茶。毎日の暮らしに役立つサービスやアイテムの選び方を、わかりやすく紹介する情報メディア「ラクしる」。';
-export const categoryIds = ['meal','housework','cleaning','subscriptions','grooming','tea'] as const;
+export const SITE_DESCRIPTION = '食事、家事、掃除、サブスク、身だしなみ、お茶、お得情報。毎日の暮らしに役立つサービスやアイテムの選び方を、わかりやすく紹介する情報メディア「ラクしる」。';
+export const categoryIds = ['meal','housework','cleaning','subscriptions','grooming','tea','deals'] as const;
 export type CategoryId = typeof categoryIds[number];
 export const categories: Record<CategoryId,{title:string;short:string;intro:string;number:string}> = {
   meal: {title:'宅配食・食事サービス',short:'食事をラクに',intro:'毎日の献立や買い物の負担を軽くする、宅配食・ミールキットなどの選び方を紹介します。',number:'01'},
@@ -10,6 +10,7 @@ export const categories: Record<CategoryId,{title:string;short:string;intro:stri
   subscriptions: {title:'暮らしのサブスク',short:'固定費を整える',intro:'便利さと費用のバランスを考えながら、暮らしの定額サービスを見直すヒントを紹介します。',number:'04'},
   grooming: {title:'身だしなみ・メンズケア',short:'毎朝のケアをラクに',intro:'シェービング後の保湿や、暮らしになじむ身だしなみケアの選び方をわかりやすく紹介します。',number:'05'},
   tea: {title:'お茶・飲みもの',short:'ひと息をもっと楽しむ',intro:'毎日のティータイムに合うお茶・飲みものの選び方を、香り、カフェイン、予算、贈りものの視点から紹介します。',number:'06'},
+  deals: {title:'お得・クーポン',short:'ムダなく賢く選ぶ',intro:'割引クーポンやキャンペーンを使う前に知っておきたい購入条件、期限、利用の流れを紹介します。',number:'07'},
 };
 export function articleUrl(id:string) { return `/articles/${id}/`; }
 export function categoryUrl(id:CategoryId) { return `/categories/${id}/`; }
