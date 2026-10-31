@@ -51,7 +51,7 @@ const safeJson=JSON.stringify(jsonNodes).replace(/</g,'\\u003c');
     <div class="shell header-inner">
       <a href="/" class="brand" aria-label="ラクしる ホーム"><BrandMark size={42}/><span class="brand__text">ラクしる<span class="brand__dot">.</span></span></a>
       <nav class="nav-desktop" aria-label="メインナビゲーション">
-        <a href="/articles/">記事をさがす</a><a href="/categories/meal/">食事</a><a href="/categories/housework/">家事</a><a href="/categories/cleaning/">掃除</a><a href="/categories/subscriptions/">サブスク</a>
+        <a href="/articles/">記事をさがす</a><a href="/categories/meal/">食事</a><a href="/categories/housework/">家事</a><a href="/categories/cleaning/">掃除</a><a href="/categories/subscriptions/">サブスク</a><a href="/categories/grooming/">身だしなみ</a>
       </nav>
       <a href="/about/" class="header-about">ラクしるについて <span aria-hidden="true">↗</span></a>
       <details class="mobile-nav"><summary aria-label="メニューを開く"><span></span><span></span><span class="sr-only">メニュー</span></summary><nav aria-label="モバイルナビゲーション"><a href="/articles/">記事をさがす</a>{categoryIds.map(id=><a href={`/categories/${id}/`}>{categories[id].title}</a>)}<a href="/about/">ラクしるについて</a></nav></details>
