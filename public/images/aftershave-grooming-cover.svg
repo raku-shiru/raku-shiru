@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">ヒゲ剃り後のスキンケアをイメージしたイラスト</title>
+<desc id="d">爽やかな朝の洗面台で頬にローションをなじませる男性と、タオルや植物を描いたオリジナルのイラスト</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#edf8f1"/><stop offset="1" stop-color="#faf8ed"/></linearGradient><linearGradient id="mirror" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e0f6ee"/></linearGradient><linearGradient id="face" x2="0" y2="1"><stop stop-color="#fbe1c8"/><stop offset="1" stop-color="#dfaa8e"/></linearGradient><linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#174f48"/><stop offset="1" stop-color="#0a3934"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#36665b" flood-opacity=".16"/></filter></defs>
+<rect width="1200" height="675" fill="url(#bg)"/><path d="M0 0H650Q580 140 450 170Q210 210 0 80Z" fill="#e0f4e9"/><path d="M0 675V510Q230 430 450 610L550 675Z" fill="#d1efe4"/><circle cx="230" cy="165" r="145" fill="none" stroke="#acdacc" stroke-width="2" stroke-dasharray="15 17"/><circle cx="335" cy="85" r="24" fill="#f1d28e" opacity=".85"/><circle cx="390" cy="415" r="16" fill="#a1dacc" opacity=".7"/>
+<!-- mirror and bathroom -->
+<rect x="612" y="54" width="504" height="515" rx="52" fill="#fff" filter="url(#shadow)"/><rect x="635" y="76" width="458" height="475" rx="40" fill="url(#mirror)"/><circle cx="850" cy="243" r="170" fill="#d4f0e5" opacity=".9"/><path d="M682 565h405v52H682z" fill="#ddf0e6"/><rect x="675" y="545" width="442" height="27" rx="12" fill="#fbfdf7" stroke="#b6d8cb" stroke-width="3"/>
+<!-- man torso -->
+<path d="M709 549C708 460 764 425 808 423h103c82 1 125 51 131 126Z" fill="url(#shirt)"/><path d="M790 457Q846 499 930 454" fill="none" stroke="#2e7770" stroke-width="10"/><path d="M821 396v56q27 36 58 0v-56" fill="url(#face)"/>
+<!-- neck and ears -->
+<ellipse cx="768" cy="294" rx="22" ry="37" fill="#dfaa8e"/><ellipse cx="969" cy="294" rx="21" ry="36" fill="#dfaa8e"/>
+<path d="M772 231C772 141 824 116 875 125c73 0 104 62 96 134l-9 97q-19 81-85 88c-60-5-103-67-106-138Z" fill="url(#face)"/>
+<!-- hair shape -->
+<path d="M767 269q-30-105 36-144 29-35 82-21 76-13 107 70 10 34-21 115-1-40-24-71-19-6-34-36-43 25-114 22-11 41-32 65Z" fill="#253a35"/><path d="M792 174q41-51 94-43m-93 78q58-6 92-36" stroke="#44665b" stroke-width="10" stroke-linecap="round" fill="none"/>
+<!-- face details -->
+<path d="M808 295q20-11 41-1m48 0q21-10 40-2" stroke="#415049" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="828" cy="296" r="4" fill="#263a36"/><circle cx="919" cy="295" r="4" fill="#263a36"/><path d="M874 303l-9 36q10 7 19 0" stroke="#ce987d" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M846 377q30 18 60-1" stroke="#a56c63" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M824 352q49 18 100 0" stroke="#d39e92" stroke-width="4" fill="none" opacity=".7"/>
+<!-- raised hand beside cheek -->
+<path d="M981 505C945 483 937 464 948 434l29-76q8-23-3-28-17-8-22 10l-24 61 20-77q7-25-9-28-16-2-23 20l-21 77 10-82q1-27-17-27-16 2-16 29l-2 78-10-57q-8-21-25-17-15 5-10 25l19 72q24 92 88 128Z" fill="url(#face)" stroke="#d09a81" stroke-width="3"/>
+<!-- plant -->
+<path d="M1113 535v-88" stroke="#5e9f86" stroke-width="5" fill="none"/><path d="M1114 484q-76-56-82-98 70 2 82 98Zm-6-17q66-65 75-104-77 8-75 104Z" fill="#5aa985"/><rect x="1065" y="514" width="89" height="72" rx="14" fill="#b4dcd0"/><path d="M1072 524h76" stroke="#f6f7ee" stroke-width="5"/>
+<!-- brand-neutral skincare bottle and towel -->
+<g filter="url(#shadow)"><rect x="507" y="441" width="98" height="161" rx="15" fill="#fff" stroke="#badbd0" stroke-width="4"/><path d="M526 440v-28h60v28" fill="#eff6ed" stroke="#8fbcb0" stroke-width="4"/><rect x="530" y="400" width="51" height="17" rx="6" fill="#71ad9c"/><rect x="529" y="492" width="56" height="47" rx="7" fill="#e1f2e8"/><path d="M542 517h30" stroke="#75ba9b" stroke-width="6" stroke-linecap="round"/></g>
+<rect x="455" y="578" width="202" height="31" rx="14" fill="#f8f7ef" stroke="#e6e4dc" stroke-width="3"/>
+<!-- floating icons -->
+<circle cx="144" cy="237" r="62" fill="#fff" stroke="#cae5d6" stroke-width="3"/><path d="M145 193q-26 38-25 55a25 25 0 0 0 50 0q0-15-25-55Z" fill="#a5d9ca"/><path d="M132 250q0 13 13 13" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+<circle cx="260" cy="333" r="47" fill="#fff" stroke="#cfe7d9" stroke-width="3"/><path d="m260 308 9 17 19 3-13 14 3 19-18-9-17 9 3-19-14-14 19-3Z" fill="#e8c78d"/>
+<path d="M142 466c35-29 69-29 104 0" fill="none" stroke="#94cfc0" stroke-width="6" stroke-linecap="round"/><circle cx="130" cy="478" r="8" fill="#94cfc0"/><circle cx="255" cy="478" r="8" fill="#94cfc0"/>
+</svg>
